@@ -1,0 +1,206 @@
+<!-- Tan Wen Siang, B1700948, View Applications (Applicant) -->
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<!-- Libraries CSS Files -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- Font special for pages-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+
+	<!-- Font Icon -->
+<link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+	
+	<!-- Main CSS File -->
+<link rel="stylesheet" href="assets/css/viewApplicationsForApplicant.css"> 
+</head>
+<body>
+<section id="topbar" class="d-none d-sm-block">
+	<div class="container-fluid clearfix">
+		<div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@hotmail.com</a>
+        <i class="fa fa-phone"></i> +6012-345678
+		</div>
+		<div class="social-links float-right">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+		<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+		</div>
+    </div>
+</section>
+
+	<!--navigation-->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav nav-pills" role="tablist">
+				<li class="nav-item pill-1">
+					<a class="nav-link" href=""><b>DreamHouse</b></a>
+				</li>
+				<li class="nav-item pill-2">
+					<a class="nav-link" href="residences.html">View Residence</a>
+				</li>
+				<li class="nav-item pill-3">
+					<a class="nav-link active" href="viewApplicationsForApplicant.html">View Your Application</a>
+				</li>
+				<li class="nav-item pill-4">
+					<a class="nav-link" href="home.html"><i class="fa fa-sign-out"></i> Sign Out</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+<!-- Personal Particulars and Applications List -->
+<section class="site-hero sm-hero overlay" data-stellar-background-ratio="0.5" style="background-image: url(assets/images/housebackground.jpg);">
+	<div class="main">
+		<div class="container backgroundColor">
+			<div class="row pt-3">
+				<div class="col-lg-3 col-md-3">
+					<figure><img class="d-block img-fluid mx-auto mx-md-0" src="assets/images/applicantPhoto.jpg" alt="applicant photo"  width="200"></figure>
+				</div>
+				
+				<div class="col-lg-9 col-md-9 mx-auto">
+					<div class="card font-poppins">
+					<h5 class="card-header text-white bg-primary text-center">Personal Particulas and Applications of Applicant</h5>
+						<div class="card-body">
+							<form>
+								<div class="form-group row">
+									<label for="userName" class="col-lg-3 col-sm-10 col-form-label font-weight-bold">Account Username</label>
+								<div class="col-lg-9 col-sm-10">
+									<input type="text" readonly class="form-control-plaintext" id="applicantUserName" value="SarahZ">
+								</div>
+									<label for="applicantName" class="col-lg-3 col-sm-10 col-form-label font-weight-bold">Full Name</label>
+								<div class="col-lg-9 col-sm-10">
+									<input type="text" readonly class="form-control-plaintext" id="applicantNameInput" value="Sarah Zakaria">
+								</div>
+								
+								<label for="applicantIC" class="col-lg-3 col-sm-10 col-form-label font-weight-bold">NRIC Number</label>
+								<div class="col-lg-9 col-sm-10">
+								<input type="text" readonly class="form-control-plaintext" id="applicantICInput" value="930815031234">
+								</div>
+								
+								<label for="applicantGender" class="col-lg-3 col-sm-10 col-form-label font-weight-bold">Gender</label>
+								<div class="col-lg-9 col-sm-10">
+								<input type="text" readonly class="form-control-plaintext" id="applicantGenderInput" value="Female">
+								</div>
+								
+								<label for="applicantEmail" class="col-lg-3 col-sm-10 col-form-label font-weight-bold">E-mail</label>
+								<div class="col-lg-9 col-sm-10">
+								<input type="text" readonly class="form-control-plaintext" id="applicantEmailInput" value="sarahzakaria93@hotmail.com">
+								</div>
+								
+								<label for="applicantIncome" class="col-lg-3 col-sm-10 col-form-label font-weight-bold">Monthly Income</label>
+								<div class="col-lg-9 col-sm-10">
+								<input type="text" readonly class="form-control-plaintext" id="applicantIncomeInput" value="RM750-RM1,500">
+							    </div>
+								
+								<div class="table-responsive pt-2">
+									<div class="font-poppins" id="applicantApplications">
+				
+									<!-- Table is attached here -->
+				
+									</div>
+								</div>
+								
+								<div id="applicantAppeal">
+									<p><b>If your application is being rejected, you may submit your appeal :</b></p> 
+									<input type="image" id="appeal_btn" src="assets/images/appealBtn.png" alt="Appeal Button" height="50" width="150"  onclick="document.location='appealRejection.html';return false;">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> <!-- Personal Particulars and Applications List ends -->
+
+	<!-- Footer -->
+	<footer class="page-footer font-small pt-4">
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
+			<!-- Grid row -->
+			<div class="row">
+				<!-- Grid column -->
+				<div class="col-md-4 mx-auto">
+					<!-- Content -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+						<div id="company_logo" >
+							<h1><a href="#" class="company_title">Dream<span>House</span></a></h1>
+						  </div>
+					  </h5>
+					<p>Brighten the future of the new generations. Opportunities are given to people who wants to own a home.</p>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company info</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">About Us</a></li>
+						<li><a href="#!">Contact Us</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Explore</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">Micro-housing</a></li>
+						<li><a href="#!">Feedback</a></li>
+						<li><a href="#!">News</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Policies</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">Privacy statement</a></li>
+						<li><a href="#!">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+			</div>
+			<!-- Grid row -->
+		</div>
+		<!-- Footer Links -->
+		<hr>
+		<!-- Social buttons -->
+		<div id="social-platforms">
+			<button type="button" class="btn btn-danger pinterest"><a href="#" class="pinterest_icon"><img src="assets/images/pinterest_icon.png"></a></button>
+			<button type="button" class="btn btn-primary facebook"><a href="#" class="facebook_icon"><img src="assets/images/facebook_icon.png"></a></button>
+			<button type="button" class="btn btn-info googleplus"><a href="#" class="googleplus_icon"><img src="assets/images/googlePlus_icon.png"></a></button>
+		</div>
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2019 Copyright:
+			<a href="https://mdbootstrap.com/education/bootstrap/"> DreamHouse.com</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
+
+<script type="text/javascript" src="assets/javascript/viewApplicationsForApplicant.js"></script>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

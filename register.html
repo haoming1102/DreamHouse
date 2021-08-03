@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Register</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Libraries CSS Files -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="assets/css/register.css" type="text/css" media="screen">
+	<title>DreamHouse Sign-Up Form</title>
+	
+</head>
+<body>
+	<!--top section-->
+	<section id="topbar" class="d-none d-lg-block">
+		<div class="container-fluid clearfix">
+			<div class="contact-info float-left">
+				<i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@hotmail.com</a>
+				<i class="fa fa-phone"></i> +6012-345678
+			</div>
+			<div class="social-links float-right">
+				<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+	</section>
+	
+	<!--navigation-->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav nav-pills" role="tablist">
+				<li class="nav-item pill-1">
+					<a class="nav-link active" href="home.html"><b>DreamHouse</b></a>
+				</li>
+				<li class="nav-item pill-2">
+					<a class="nav-link" href="registerHousingOfficer.html">Sign Up as Housing Officer</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<!--form-->
+	<div class="col-md-8 offset-md-2">
+	
+		<!--register form-->
+		<div class="container" id="register">
+			<form action="home.html" class="needs-validation" novalidate>
+			<div class="card card-outline-secondary">
+				<div class="card-header">
+					<center><h3 class="mb-0">Sign Up as Applicant</h3></center>
+				</div>
+				
+				<div class="card-body">
+					<div class="form-group row">
+						<label for="username" class="col-sm-6 col-lg-3 col-form-label"><i class="fa fa-user"></i> Username</label>
+						<div class="col-sm-12 col-lg-9">
+							<input type="name" class="form-control" id="username" placeholder="Username" required>
+							<div class="invalid-feedback">Please enter your username.</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<label for="password" class="col-sm-6 col-lg-3 col-form-label"><i class="fa fa-key"></i> Password</label>
+						<div class="col-sm-12 col-lg-9">
+							<input type="password" class="form-control" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required> &nbsp 
+							<label style="font-size:14px; color:grey;"><input type="checkbox" style="margin-top:15px;" onclick="showPassword()"> Show Password</label>
+							<div class="invalid-feedback">Your password must include at least one number, one upper and lower case letters with 6 or more characters.</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<label for="email" class="col-sm-6 col-lg-3 col-form-label"><i class="fa fa-envelope"></i> E-mail</label>
+						<div class="col-sm-12 col-lg-9">
+							<input type="email" class="form-control" id="email1" placeholder="<<email@example.com>>" required>
+							<div class="invalid-feedback">Please enter your email.</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<label for="fullname" class="col-sm-6 col-lg-3 col-form-label"><i class="fa fa-users"></i> Fullname (As in NRIC)</label>
+						<div class="col-sm-12 col-lg-9">
+							<input type="name" class="form-control" id="name1" placeholder="Eg. LEE GUO JING" pattern="[A-Z\s]+" required>
+							<div class="invalid-feedback">Please enter your full name in upper case.</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<label for="number" class="col-sm-6 col-lg-3 col-form-label"><i class="fa fa-book"></i> NRIC Number</label>
+						<div class="col-sm-12 col-lg-9">
+							<input type="text" class="form-control" id="ic" placeholder="Eg. 95XXXX01XXXX" maxlength="12" minlength="12" pattern="\d*" required>
+							<div class="invalid-feedback">Please enter 12-digit number.</div>
+						</div>
+					</div>
+		
+					<div class="form-group row">
+						<label for="gender" class="col-sm-6 col-lg-3 col-form-label"><i class="fa fa-venus-mars"></i> Gender</label>
+						<div class="col-sm-12 col-lg-9">
+							<label class="radio-inline"><input type="radio" class="form-group" name="optradio" checked>Male</label>
+							&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+							<label class="radio-inline"><input type="radio" class="form-group" name="optradio">Female</label>
+						</div>
+					</div>
+		
+					<div class="form-group row">
+						<label for="income" class="col-sm-6 col-lg-3 col-form-label"><i class="fa fa-dollar"></i> Monthly Income</label>
+						<div class="col-sm-12 col-lg-9">
+							<select class="form-control" id="income">
+								<option>Below RM750</option>
+								<option>RM750 - RM1,500</option>
+								<option>RM1500 - RM2,000</option>
+								<option>Above RM2,000</option>
+							</select>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<label for="document" class="col-sm-6 col-lg-3 col-form-label"><i class="fa fa-file"></i> Related Documents</label>
+						<div class="col-sm-12 col-lg-9">
+							<p id="littleDescription"><i>Rename your file as "payslip_date" and upload your payslip to prove your income<br>
+							File extensions allowed: *.jpeg,*.jpg, *.png and *.pdf</i></p>
+						</div>
+						<label for="space" class="col-sm-6 col-lg-3 col-form-label"></label>
+						<div class="col-sm-12 col-lg-9">
+							<input type="file" class="form-control-file" id="document" required>
+							<div class="invalid-feedback">Payslip is required.</div>
+						</div>
+					</div>
+					
+					<div class="form-group row">
+						<label for="photo" class="col-sm-6 col-lg-3 col-form-label"><i class="fa fa-photo"></i> Passport Photo</label>
+						<div class="col-sm-12 col-lg-3" id="littleDescription">
+							<img src="assets/images/samplepassport.jpg" width="153" height="221" alt="samplepassport">
+						</div>
+						<div class="col-sm-12 col-lg-5">
+							<p id="littleDescription"><i>Please upload a photo which fulfils the requirements below:<br>
+							- Blue color background.<br>
+							- Dress up with collar shirt.<br>
+							- Only allow file type (.jpg, .jpeg or .png).<br>
+							- Minimum pixel is 350px (Width) X 479px (Height).<br>
+							- Maximum file size 500KB.<br>
+							- Rename your file as "photo_name_date".</i></p>
+						</div>
+						<label for="space" class="col-sm-6 col-lg-3 col-form-label"></label>
+						<div class="col-sm-12 col-lg-9">
+							<br><input type="file" class="form-control-file" id="passport" required>
+							<div class="invalid-feedback">Passport Photo is required.</div>
+						</div>
+					</div>
+					
+					<br><br>
+		
+					<p><b>Personal Data Protection Statement</b><br>
+					The protection of personal data is an important concern to us and any personal data collected on this form will be treated in accordance 
+					with the Personal Data Protection Notice of the company PDPA (English) | PDPA (BM)<br><br>
+					By submitting this application form, you agree to <a href="http://eperumahan.dbkl.gov.my/eRumah/uploads/dload/panduan_pengguna.pdf">
+					our Terms and Conditions</a>.</p>
+		
+					<div class="form-groupform-check">
+						<label class="form-check-label col-sm-12">
+							<input class="form-check-input" type="checkbox" name="remember" required> I have read and accept the Terms and Conditions.
+							<div class="invalid-feedback">Please check this checkbox before registering.</div>
+						</label>
+					</div>
+					
+					<div class="form-group row">
+                        <label class="col-lg-4 col-form-label form-control-label"></label>
+						<div class="col-lg-8">
+							<input type="submit" class="btn btn-primary" value="Register" onclick="store()">
+							&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+							<a href="home.html" class="btn btn-secondary">Cancel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</form>
+		</div>
+		<hr class="my-4">
+	</div>
+
+	
+	<!-- Footer -->
+	<footer class="page-footer font-small pt-4">
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
+			<!-- Grid row -->
+			<div class="row">
+				<!-- Grid column -->
+				<div class="col-md-4 mx-auto">
+					<!-- Content -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+						<div id="company_logo" >
+							<h1><a href="#" class="company_title">Dream<span>House</span></a></h1>
+						  </div>
+					  </h5>
+					<p>Brighten the future of the new generations. Opportunities are given to people who wants to own a home.</p>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company info</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">About Us</a></li>
+						<li><a href="#!">Contact Us</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Explore</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">Micro-housing</a></li>
+						<li><a href="#!">Feedback</a></li>
+						<li><a href="#!">News</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Policies</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">Privacy statement</a></li>
+						<li><a href="#!">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+			</div>
+			<!-- Grid row -->
+		</div>
+		<!-- Footer Links -->
+		<hr>
+		<!-- Social buttons -->
+		<div id="social-platforms">
+			<button type="button" class="btn btn-danger pinterest"><a href="#" class="pinterest_icon"><img src="assets/images/pinterest_icon.png"></a></button>
+			<button type="button" class="btn btn-primary facebook"><a href="#" class="facebook_icon"><img src="assets/images/facebook_icon.png"></a></button>
+			<button type="button" class="btn btn-info googleplus"><a href="#" class="googleplus_icon"><img src="assets/images/googlePlus_icon.png"></a></button>
+		</div>
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2019 Copyright:
+			<a href="https://mdbootstrap.com/education/bootstrap/"> DreamHouse.com</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
+	
+	<script type="text/javascript" src="assets/javascript/register.js"></script>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type= "text/javascript" src= "assets/javascript/set_residences.js"></script>
+    <title>New Residences</title>
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="assets/css/set_residences.css">
+
+	<!-- Libraries CSS Files --> 
+	  
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  
+
+
+
+
+</head>
+<body>
+	<!--top section-->
+	<section id="topbar" class="d-none d-lg-block">
+		<div class="container-fluid clearfix">
+			<div class="contact-info float-left">
+				<i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@hotmail.com</a>
+				<i class="fa fa-phone"></i> +6012-345678
+			</div>
+			<div class="social-links float-right">
+				<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+	</section>
+		
+			
+
+	<!--navigation-->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav nav-pills" role="tablist">
+				<li class="nav-item pill-1">
+					<a class="nav-link" href=""><b>DreamHouse</b></a>
+				</li>
+				<li class="nav-item pill-2">
+					<a class="nav-link active" href="set_residences.html">Set Up Residence</a>
+				</li>
+				<li class="nav-item pill-3">
+					<a class="nav-link" href="allocate_housing.html">Allocate Housing</a>
+				</li>
+				<li class="nav-item pill-4">
+					<a class="nav-link" href="viewApplicationsForHO.html">View Applications</a>
+				</li>
+				<li class="nav-item pill-5">
+					<a class="nav-link" href="home.html"><i class="fa fa-sign-out"></i> Sign Out</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+    <!--boostrap table-->
+    <div class="card shadow p-3 mb-5 bg-white rounded">
+      
+      <div class="card-body ">
+          <h5 class="card-header p-3 mb-2 bg-secondary text-white">List of new residences</h5>
+		  <div class="table-responsive">
+          <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Select</th>
+				  <th scope="col">Residence ID</th>
+				  <th scope="col">Amenities</th>
+                  <th scope="col">Monthly Rental (RM)</th>
+				  <th scope="col">Size of units (sqft)</th>
+                  <th scope="col">Number of units</th>
+                  <th scope="col">Address</th>
+                </tr>
+              </thead>
+              <tbody>
+      
+				<tr>
+                    <td><input type="checkbox" name="record"></td>
+                    <td>A123B234</td>
+					<td>-1 Bedroom<br>
+						-1 Bathroom<br>
+						-1 Kitchen</td>
+                    <td>750</td>
+                    <td>600</td>
+					<td>25</td>
+                    <td>Puchong</td>
+                </tr>
+				
+                <tr>
+                    <td><input type="checkbox" name="record"></td>
+                    <td>D456E789</td>
+					<td>-1 Bedroom<br>
+						-1 Bathroom<br>
+						-1 Kitchen</td>
+                    <td>800</td>
+                    <td>650</td>
+					<td>10</td>
+                    <td>Puchong</td>
+                </tr>
+      
+      
+                <tr>
+                    <td><input type="checkbox" name="record"></td>
+                    <td> G537W244</td>
+					<td>-1 Bedroom<br>
+						-1 Bathroom<br>
+						-1 Kitchen</td>
+                    <td>900</td>
+                    <td>470</td>
+					<td>16</td>
+                    <td>Damansara</td>
+                </tr>
+   
+              </tbody>
+            </table>
+
+            <!-- Button trigger modal(add row with details) -->
+            <button type="button" class="btn  btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+                Add new residence
+                </button>
+   
+   
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+  
+  <!-- form -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New Residence</h5>
+
+          
+          
+        </div>
+
+        <div class="modal-body">
+            <form>
+                    
+				<div class="form-group">
+					<textarea class="form-control" id="residenceID" rows="1" placeholder="Residence ID"></textarea>
+                </div>
+				
+                <div class="form-group">
+					<textarea class="form-control" id="amenities" rows="3" placeholder="Amenities"></textarea>
+                </div>
+                
+				<div class="input-group mb-3">
+						
+					<div class="input-group-prepend">
+						<span class="input-group-text" id="basic-addon1">RM</span>
+					</div>
+					<input id="monthly-rental" type="number" class="form-control" placeholder="Monthly rental" aria-label="Username" aria-describedby="basic-addon1">
+					<div class="input-group-append">
+						<span class="input-group-text">.00</span>
+					</div>
+				</div>
+                
+                <div class="input-group mb-3">
+                  
+                  <input id= "size-units" type="number" class="form-control" id="numberInput" placeholder="Size of units ">
+                  <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">sqft</span>
+                  </div>
+                </div>
+				
+				<div class="form-group">
+                  
+                  <input id = "no-units" type="number" class="form-control" id="numberInput" placeholder="Number of units">
+                </div>
+				
+                <div class="form-group">
+                  
+                  <textarea class="form-control" id="address" rows="3" placeholder="Address"></textarea>
+                </div>
+              </form>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary add-row" data-dismiss="modal" >Save</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          
+
+        </div>
+          
+        </div>
+      </div>
+    </div>
+
+    
+  
+<!-- Footer -->
+	<footer class="page-footer font-small pt-4">
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
+			<!-- Grid row -->
+			<div class="row">
+				<!-- Grid column -->
+				<div class="col-md-4 mx-auto">
+					<!-- Content -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+						<div id="company_logo" >
+							<h1><a href="#" class="company_title">Dream<span>House</span></a></h1>
+						  </div>
+					  </h5>
+					<p>Brighten the future of the new generations. Opportunities are given to people who wants to own a home.</p>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company info</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">About Us</a></li>
+						<li><a href="#!">Contact Us</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Explore</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">Micro-housing</a></li>
+						<li><a href="#!">Feedback</a></li>
+						<li><a href="#!">News</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Policies</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">Privacy statement</a></li>
+						<li><a href="#!">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+			</div>
+			<!-- Grid row -->
+		</div>
+		<!-- Footer Links -->
+		<hr>
+		<!-- Social buttons -->
+		<div id="social-platforms">
+			<button type="button" class="btn btn-danger pinterest"><a href="#" class="pinterest_icon"><img src="assets/images/pinterest_icon.png"></a></button>
+			<button type="button" class="btn btn-primary facebook"><a href="#" class="facebook_icon"><img src="assets/images/facebook_icon.png"></a></button>
+			<button type="button" class="btn btn-info googleplus"><a href="#" class="googleplus_icon"><img src="assets/images/googlePlus_icon.png"></a></button>
+		</div>
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2019 Copyright:
+			<a href="https://mdbootstrap.com/education/bootstrap/"> DreamHouse.com</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type= "text/javascript" src= "assets/javascript/allocating_housing.js"></script>
+    <title>Allocate housing</title>
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="assets/css/set_residences.css">
+
+	<!-- Libraries CSS Files --> 
+  
+	<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Javascript for bootstrap-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  
+</head>
+<body>
+	<!--Top Bar-->
+	<section id="topbar" class="d-none d-sm-block">
+		<div class="container-fluid clearfix">
+			<div class="contact-info float-left">
+			<i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@hotmail.com</a>
+			<i class="fa fa-phone"></i> +6012-345678
+			</div>
+			<div class="social-links float-right">
+			<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+			<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+			<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+	</section>
+	
+	<!--navigation-->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav nav-pills" role="tablist">
+				<li class="nav-item pill-1">
+					<a class="nav-link" href=""><b>DreamHouse</b></a>
+				</li>
+				<li class="nav-item pill-2">
+					<a class="nav-link" href="set_residences.html">Set Up Residence</a>
+				</li>
+				<li class="nav-item pill-3">
+					<a class="nav-link active" href="allocate_housing.html">Allocate Housing</a>
+				</li>
+				<li class="nav-item pill-4">
+					<a class="nav-link" href="viewApplicationsForHO.html">View Applications</a>
+				</li>
+				<li class="nav-item pill-5">
+					<a class="nav-link" href="home.html"><i class="fa fa-sign-out"></i> Sign Out</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+    
+
+
+     <!--boostrap first table of applications-->
+    
+    <div class="card shadow p-3 mb-5 bg-white rounded">
+      
+      <div class="card-body ">
+          <h5 class="card-header p-3 mb-2 bg-secondary text-white">List of applications</h5>
+          <div class="table-responsive">
+            
+              <table class="table table-hover container-fluid" >
+                  <thead>
+                    <tr>
+                      <th scope="col">Select</th>
+                      <th scope="col">Application ID</th>
+                      <th scope="col">Application name</th>
+                      <th scope="col">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+          
+                    <tr>
+                        <td><input type="checkbox" name="record"></td>
+                        <td> A0001</td>
+                        <td>SarahZ</td>
+                        <td>
+                          <span class="badge badge-primary">New</span>
+                          </td>
+                    </tr>
+          
+                    <tr>
+                        <td><input type="checkbox" name="record"></td>
+                        <td> A0002</td>
+                        <td>SarahZ</td>
+                        <td>
+                          <span class="badge badge-primary">New</span>
+                          </td>
+                    </tr>
+          
+                    <tr>
+                        <td><input type="checkbox" name="record"></td>
+                        <td> A0003</td>
+                        <td>SarahZ</td>
+                        <td>
+                          <span class="badge badge-primary">New</span>
+                          </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" name="record"></td>
+                        <td> A0004</td>
+                        <td>OngHk</td>
+                        <td>
+                          <span class="badge badge-primary">New</span>
+                          </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" name="record"></td>
+                        <td> A0005</td>
+                        <td>YCK</td>
+                        <td>
+                          <span class="badge badge-primary">New</span>
+                          </td>
+                    </tr>
+
+
+                    <tr>
+                        <td><input type="checkbox" name="record"></td>
+                        <td> A0012</td>
+                        <td>Iskandar</td>
+                        <td>
+                          <span class="badge badge-info">Wait List</span>
+                          </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" name="record"></td>
+                        <td> A0015</td>
+                        <td>IIy</td>
+                        <td>
+                          <span class="badge badge-info">Wait List</span>
+                          </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" name="record"></td>
+                        <td> A0016</td>
+                        <td>Yamada</td>
+                        <td>
+                          <span class="badge badge-info">Wait List</span>
+                          </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" name="record"></td>
+                        <td> A0021</td>
+                        <td>MElias</td>
+                        <td>
+                          <span class="badge badge-danger">Appeal pending</span>
+                          </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" name="record"></td>
+                        <td> A0023</td>
+                        <td>Sanithan</td>
+                        <td>
+                          <span class="badge badge-danger">Appeal pending</span>
+                          </td>
+                    </tr>
+          
+                  </tbody>
+                </table>
+                </div>
+          
+            <!-- Button trigger modal(add row with details) -->
+            <button type="button" class="btn  btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+                Allocate house
+            </button>
+      </div>
+    </div>
+  
+
+
+  <!-- second table (update table)-->              
+  <!-- A list of updated status starts -->     
+	<div class="card shadow p-3 mb-5 bg-white rounded">       
+		<div class="card-body ">           
+			<h5 class="card-header p-3 mb-2 bg-light text-info">Updated status</h5>                                 
+			<div class="table-responsive">             
+				<div class="table table-hover container-fluid table2" id="applicationsList">                           
+				<!-- Table is attached here -->                          
+				</div>           
+			</div>                         
+		</div>   
+	</div> <!-- A list of updated status ends -->                            
+	<script type="text/javascript" src="assets/javascript/table_update.js"></script>
+  
+      
+  
+              
+  
+              
+        
+    
+              
+          
+        </div>
+      </div>
+    
+  
+
+
+
+
+    
+
+    
+  
+  <!-- form -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Allocate housing</h5>
+
+          
+          
+        </div>
+
+        
+            <div class= "modal-body">
+                <form class="needs-validation" novalidate>
+				
+					<div class="input-group mb-3">
+  
+                    <input id="application_id" type="number" class="form-control" placeholder="Applicantion ID" aria-label="id" aria-describedby="basic-addon1" required>
+                    <div class="invalid-feedback">
+                        You must enter application id.
+                      </div>
+                </div>
+                    
+                <div class="input-group mb-3">
+                      
+                      <input id="residence_id" type="text" class="form-control" placeholder="Residence ID" aria-label="id" aria-describedby="basic-addon1" required>
+                      <div class="invalid-feedback">
+                          You must enter residence_id.
+                        </div>
+                    </div>
+
+                <div class="input-group mb-3">              
+                  
+                    <input id="residence_name" type="text" class="form-control" placeholder="Residence name" aria-label="id" aria-describedby="basic-addon1" required>
+                    <div class="invalid-feedback">
+                        Residence name is required.
+                      </div>
+                </div>
+                
+                <div class="input-group mb-3">
+                  
+                  <input id="unit-number" type="number" class="form-control"  placeholder="Unit number" required>
+                  <div class="invalid-feedback">
+                     Unit number is required.
+                    </div>
+                </div>
+                
+                <div class="input-group mb-3">
+                  
+                  <input id= "date-from" type="date" class="form-control"  placeholder="Date from " required>
+                  <div class="invalid-feedback">
+                      Date is required.
+                    </div>
+                  
+                </div>
+                <div class="form-group">
+                  
+                  <input  type="number" class="form-control" id="duration" placeholder="Duration" required>
+                  <div class="invalid-feedback">
+                      Duration is required.
+                    </div>
+                </div>
+
+
+                <div class="input-group mb-3">                     
+                      
+                    <input id="status" type="text" class="form-control" placeholder="Status" aria-label="status" aria-describedby="basic-addon1" required>
+                    <div class="invalid-feedback">
+                        Status is required.
+                      </div>
+                </div>
+
+
+                  <div class="modal-footer">
+          
+                      <button class="btn btn-primary add-row"  data-dismiss="modal" type="button" >Confirm</button>
+                      <button type="button" class="btn btn-secondary " data-dismiss="modal">Cancel</button>                      
+					  
+                  </div>
+              </form>
+        </div>
+        
+          
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  
+ 	<!-- Footer -->
+	<footer class="page-footer font-small pt-4">
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
+			<!-- Grid row -->
+			<div class="row">
+				<!-- Grid column -->
+				<div class="col-md-4 mx-auto">
+					<!-- Content -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+						<div id="company_logo" >
+							<h1><a href="#" class="company_title">Dream<span>House</span></a></h1>
+						  </div>
+					  </h5>
+					<p>Brighten the future of the new generations. Opportunities are given to people who wants to own a home.</p>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company info</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">About Us</a></li>
+						<li><a href="#!">Contact Us</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Explore</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">Micro-housing</a></li>
+						<li><a href="#!">Feedback</a></li>
+						<li><a href="#!">News</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Policies</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">Privacy statement</a></li>
+						<li><a href="#!">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+			</div>
+			<!-- Grid row -->
+		</div>
+		<!-- Footer Links -->
+		<hr>
+		<!-- Social buttons -->
+		<div id="social-platforms">
+			<button type="button" class="btn btn-danger pinterest"><a href="#" class="pinterest_icon"><img src="assets/images/pinterest_icon.png"></a></button>
+			<button type="button" class="btn btn-primary facebook"><a href="#" class="facebook_icon"><img src="assets/images/facebook_icon.png"></a></button>
+			<button type="button" class="btn btn-info googleplus"><a href="#" class="googleplus_icon"><img src="assets/images/googlePlus_icon.png"></a></button>
+		</div>
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2019 Copyright:
+			<a href="https://mdbootstrap.com/education/bootstrap/"> DreamHouse.com</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
+	
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+   
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!--Use Case 2: View Residences (Lee Hao Ming B1801011)-->
+<!--Use Case 3: Submit Applications (Lee Hao Ming B1801011)-->
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Residences</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+	<!-- Libraries CSS Files -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="assets/css/residence.css" type="text/css" media="screen">
+	
+</head>
+<body  onload="loadCard()">
+	<!--top section-->
+	<section id="topbar" class="d-none d-lg-block">
+		<div class="container-fluid clearfix">
+			<div class="contact-info float-left">
+				<i class="fa fa-envelope-o"></i> <a href="mailto:contact@example.com">contact@hotmail.com</a>
+				<i class="fa fa-phone"></i> +6012-345678
+			</div>
+			<div class="social-links float-right">
+				<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+			</div>
+		</div>
+	</section>
+	
+	<!--navigation-->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav nav-pills" role="tablist">
+				<li class="nav-item pill-1">
+					<a class="nav-link" href=""><b>DreamHouse</b></a>
+				</li>
+				<li class="nav-item pill-2">
+					<a class="nav-link active" href="residences.html">View Residence</a>
+				</li>
+				<li class="nav-item pill-3">
+					<a class="nav-link" href="viewApplicationsForApplicant.html">View Your Application</a>
+				</li>
+				<li class="nav-item pill-4">
+					<a class="nav-link" href="home.html"><i class="fa fa-sign-out"></i> Sign Out</a>
+				</li>
+			</ul>
+		</div>
+		<form class="form-inline" style="float:right;">
+			<input class="form-control mr-sm-2" id="searchBar" type="text" placeholder="Search for residence..." onkeyup="searchFunction()">
+		</form>
+	</nav>
+	
+	
+    <br><br>
+    <!--Residences-->
+	<!--insert the card and data from javascript through id:residenceList-->
+    <div class="container">
+        <div class="row" id="residenceList">
+            <!--Titles-->
+            <div class="pb-5 col-12">
+                <h2 class="align-left pb-3 fonts-style display-3"><i class="fa fa-home"></i>Residences</i></h2>
+            </div>
+			
+			<!--Submit Application Modal-->
+			<form class="needs-validation" novalidate action="viewApplicationsForApplicant.html">
+				<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">Choose the date for this unit:</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+									<div class="form-group row">
+										<label for="month" class="col-sm-6 col-lg-4 col-form-label"><i class="fa fa-calendar"></i> Required Date</label>
+										<div class="col-sm-12 col-lg-8">
+											<input type="month" class="form-control" id="month" required>
+											<div class="invalid-feedback">Please enter the month and year that the unit is required.</div>
+										</div>
+									</div>
+							</div>
+							<div class="modal-footer">
+								<input type="submit" class="btn btn-primary" value="Submit">
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+    </div>
+	
+	<br><br>
+	<!-- Footer -->
+	<footer class="page-footer font-small pt-4">
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
+			<!-- Grid row -->
+			<div class="row">
+				<!-- Grid column -->
+				<div class="col-md-4 mx-auto">
+					<!-- Content -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+						<div id="company_logo" >
+							<h1><a href="#" class="company_title">Dream<span>House</span></a></h1>
+						  </div>
+					  </h5>
+					<p>Brighten the future of the new generations. Opportunities are given to people who wants to own a home.</p>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company info</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">About Us</a></li>
+						<li><a href="#!">Contact Us</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Explore</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">Micro-housing</a></li>
+						<li><a href="#!">Feedback</a></li>
+						<li><a href="#!">News</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+				<hr class="clearfix w-100 d-md-none">
+				<!-- Grid column -->
+				<div class="col-md-2 mx-auto">
+					<!-- Links -->
+					<h5 class="font-weight-bold text-uppercase mt-3 mb-4">Policies</h5>
+					<ul class="list-unstyled">
+						<li><a href="#!">Privacy statement</a></li>
+						<li><a href="#!">Terms & Conditions</a></li>
+					</ul>
+				</div>
+				<!-- Grid column -->
+			</div>
+			<!-- Grid row -->
+		</div>
+		<!-- Footer Links -->
+		<hr>
+		<!-- Social buttons -->
+		<div id="social-platforms">
+			<button type="button" class="btn btn-danger pinterest"><a href="#" class="pinterest_icon"><img src="assets/images/pinterest_icon.png"></a></button>
+			<button type="button" class="btn btn-primary facebook"><a href="#" class="facebook_icon"><img src="assets/images/facebook_icon.png"></a></button>
+			<button type="button" class="btn btn-info googleplus"><a href="#" class="googleplus_icon"><img src="assets/images/googlePlus_icon.png"></a></button>
+		</div>
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2019 Copyright:
+			<a href="https://mdbootstrap.com/education/bootstrap/"> DreamHouse.com</a>
+		</div>
+		<!-- Copyright -->
+	</footer>
+	
+	<script type="text/javascript" src="assets/javascript/residence.js"></script>
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
